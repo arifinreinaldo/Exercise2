@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<body>
+    <h1>
+        Kalkulator Ku
+    </h1>
+    <table>
+        <tbody>
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="hasil" value="0">
+                </td>
+            </tr>
+            <tr>
+                <td><button onclick="document.getElementById('hasil').value=parseInt(document.getElementById('hasil').value+'9')">9</button></td>
+                <td><button onclick="document.getElementById('hasil').value=parseInt(document.getElementById('hasil').value+'8')">8</button></td>
+                <td><button onclick="document.getElementById('hasil').value=parseInt(document.getElementById('hasil').value+'7')">7</button></td>
+                <td><button onclick="(angka1)=document.getElementById('hasil').value;(operator)='+';document.getElementById('hasil').value=''">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="document.getElementById('hasil').value=parseInt(document.getElementById('hasil').value+'6')">6</button></td>
+                <td><button onclick="document.getElementById('hasil').value=parseInt(document.getElementById('hasil').value+'5')">5</button></td>
+                <td><button onclick="document.getElementById('hasil').value=parseInt(document.getElementById('hasil').value+'4')">4</button></td>
+                <td><button onclick="(angka1)=document.getElementById('hasil').value;(operator)='-';document.getElementById('hasil').value=''">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="document.getElementById('hasil').value=parseInt(document.getElementById('hasil').value+'3')">3</button></td>
+                <td><button onclick="document.getElementById('hasil').value=parseInt(document.getElementById('hasil').value+'2')">2</button></td>
+                <td><button onclick="document.getElementById('hasil').value=parseInt(document.getElementById('hasil').value+'1')">1</button></td>
+                <td><button onclick="(angka1)=document.getElementById('hasil').value;(operator)='x';document.getElementById('hasil').value=''">X</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="(angka2)=document.getElementById('hasil').value;(angka1)=parseInt(angka1);(angka2)=parseInt(angka2);if(operator=='+'){hasil = angka1+angka2}else if(operator=='-'){hasil = angka1-angka2}else if(operator=='x'){hasil = angka1*angka2}else if(operator=='/'){hasil = angka1/angka2};document.getElementById('hasil').value=parseInt(hasil);">=</button></td>
+                <td><button onclick="document.getElementById('hasil').value=parseInt(document.getElementById('hasil').value+'0')">0</button></td>
+                <td><button onclick="(angka1)=0;(angka2)=0;(operator)='';document.getElementById('hasil').value=0">C</button></td>
+                <td><button onclick="(angka1)=document.getElementById('hasil').value;(operator)='/';document.getElementById('hasil').value=''">/</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="css\style.css">
+    <script>
+    var angka1 = 0;
+    var angka2 = 0;
+    var operator = 0;
+    var hasil = 0;
+    </script>
+</head>
+</html>
